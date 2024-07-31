@@ -17,17 +17,21 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+    height:100vh;
+
 }
 
+.main-section{
+    height:100%;
+    background:linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(229,241,255,1) 50%, #1769C6 50%, #1769C6 70%, #00244D 100%)
+}
+.ant-card-body{
+  padding:5px !important;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
