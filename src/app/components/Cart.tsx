@@ -70,6 +70,7 @@ const Cart = ({ onClose, open }: props) => {
                     </div>
                     <div>
                       <Input
+                        min={1}
                         type="number"
                         style={{ width: "60px", textAlign: "center" }}
                         value={item.count}

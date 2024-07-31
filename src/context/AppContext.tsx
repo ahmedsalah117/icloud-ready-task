@@ -93,17 +93,14 @@ export function AppContextProvider({
   // update item's count in the cart
   function updateItemsCountInCart(itemId: number, value: number) {
     const targetedCartItem = cartItems.find((item) => item.id === itemId);
+    const targetedItemIndex = cartItems.indexOf(targetedCartItem);
+    const cartItemsCopy = JSON.parse(JSON.stringify(cartItems));
+    cartItemsCopy[targetedItemIndex].count = value;
+    setCartItems(cartItemsCopy);
+    setTotalCartCount((prevCount) => {
+      return prevCount + (value - targetedCartItem.count);
+    });
 
-    if (targetedCartItem) {
-      const filteredCartItems = cartItems.filter((item) => item.id !== itemId);
-      setCartItems([
-        ...filteredCartItems,
-        { ...targetedCartItem, count: value },
-      ]);
-      setTotalCartCount((prevCount) => {
-        return prevCount + (value - targetedCartItem.count);
-      });
-    }
   }
 
   // Remove an item from the cart...

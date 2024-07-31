@@ -10,6 +10,7 @@ import { Avatar, Badge, Divider, Tooltip, Typography } from "antd";
 import { AppContext } from "@/context/AppContext";
 import Cart from "./Cart";
 import KitchenMenu from "./KitchenMenu";
+import KitchenIcon from "../../../public/images/kitchen_icon.svg";
 const { Text, Title, Paragraph } = Typography;
 const Navbar = () => {
   const { kitchenItemsCount, cartItems, totalCartCount } =
