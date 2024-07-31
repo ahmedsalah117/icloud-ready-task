@@ -85,7 +85,7 @@ const PillarCard = ({
             type="success"
             style={{ fontSize: "20px", lineHeight: "24.2px", color: "#fff" }}
           >
-            {price} DDTSU*
+            {price} DTSU*
           </Text>
           <Avatar.Group
             style={{
