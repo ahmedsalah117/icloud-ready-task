@@ -12,6 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "pillar-details-gradient": "linear-gradient(to bottom,#fff,#97E0F3)",
       },
       colors: {
         navColor: "#f8f8f8",

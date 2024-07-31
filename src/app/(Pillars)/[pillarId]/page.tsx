@@ -16,7 +16,7 @@ const PillarsDetailsPage = ({ params }: props) => {
   )[0];
 
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div className="w-full h-full flex justify-center items-center bg-pillar-details-gradient">
       <Typography.Title
         style={{
           color: "#00254F !important",
